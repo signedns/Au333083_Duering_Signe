@@ -1,0 +1,196 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+    }
+\title{Digital Methods: Learning Journal Template}
+\author{Signe Düring}
+
+\date{Autumn 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Today's Date}
+\subsection{Thoughts / Intentions}
+\subsection{Action}
+\subsection{Results}
+\subsection{Final Thoughts}
+
+\pagebreak{}
+
+\section{31/10/2019}
+Regular Expressions
+\subsection{Thoughts / Intentions}
+
+\textbf{11:04am}: I’m beginning the Data Carpentry exercise for this week: To convert a Voyant stop-list into R stop-list. I am finding the various different applications very overwhelming and hoping that after the exercises I will have a clearer idea of it all. 
+
+\textbf{11:57am}: Decided before completing Data Carpentry exercise, I want to familiarise myself with Overleaf and the Learning Journal Template. currently trying to reorganize my notes to fit the Overleaf Template.
+
+
+\textbf{12:30pm}: After having complications with Overleaf, now returning to Data Carpentry exercise and writing notes in Onenote for my learning journal. 
+Ask instructor in class for help on Overleaf. 
+
+\subsection{Action}
+
+{12:35}
+\begin{itemize}
+\item Used code ([a-z].+) in order to group all the words - I am missing the numbers
+\item Result: Nothing 
+\item  Looks about right in the substitution field but I can't seem to add " or the comma. Makes a big space between the words and the colons. 
+\item Everything is wrong, trying to add the numbers.
+\item Action: (\d{2,4})
+\item Result:  in the top right corners it says 'no matches' and no numbers are highlighted in the string field. Although in the explanation rubric says '{2} Quantifier — Matches exactly 2 times'. Very strange. 
+
+\item A friend is helping me with the exercise me but apparently my program does not respond the same as his. 
+\item First we tried to convert a stop-list for Voyant into R stoplist. 
+\item I tried typing in the regular expression \s which should match any space, tab, or newline.
+\item I used the regular expression (\s) which created 586 matches on my friends computer, yet no matches appears on my screen. 
+\item I reloaded the browser, and now my and my friends results are  the same (586 matches) I have no idea why. 
+\item We talked about how to understand the basic logic behind using regular expressions which is what I am fundamentally struggling with - I realized that that what I wanted was to find everything I wished to delete (the new line) and replace it with what I wanted instead: the quotation marks ( "), the comma (,)  and space. 
+\item Action: regular expression \s replace with ", "
+\item Finally I  got the correct result. Although I was not able to catch all the first and last word, therefore I had to manually insert quatations marks before the first word and after the last. 
+\item Afterwards I wished to convert the R stoplist to a Voyant stoplist, I apllied the same logic as used in the previous task - find and replace.
+Action: Find comma (,) and replace with new line (\s). 
+\item The stoplist turned out the way I wanted it. 
+\end{itemize} 
+
+
+
+\section{13/11/2019}
+
+Software Carpentry: Shell
+
+
+\subsection{Thoughts/Intentions}
+
+
+\item \textbf{07:30am}: Setting Gitbash and Nano before class. 
+\item \textbf{08:15am}: Beginning class on Version control a.k.a. revision control / source code management, shell and creating a repository in Github
+\item From operating a computer based on graphical user interfaces (GUI) to learning the language and syntax of bash and in order to work with it on a command-line interface. The command line can for example move 80.000 documents into 80.000 different folders. 
+
+\subsection{Action}
+
+Setting up version control
+
+Bash and shell command
+\begin{itemize}
+\item Open my mac shell (terminal) 
+\item type pwd - navigates to my home directory
+\item type Ls (List) - list everything in this directory 
+\item type Ls -man (should provide an overview of how to use a command and what flags it accepts)
+\item Result: ls: man: No such file or directory - apparently this command does not work on mac and I have to google it. 
+\item Its "man ls" - success
+\item Now I try to change directory 
+\item Type Cd Desktop
+\item Type ls -aFG
+\item Now I'm showed what's on my desktop an different files are sorted into different colours.
+\end{itemize}
+Creating a repository
+\begin{itemize}
+    \item First, type lwe create a directory in Desktop folder for our work and 
+	\item Type cd ~/Desktop
+	\item Type mkdir planets
+	\item Type cd planets
+	\item Then we tell Git to make planets a repository - a place where Git can store versions of our files:
+	\item Type git init
+	\item To check if everything was successful: I type ls -aYou
+	\item Result: see a .git folder.
+	\item I am unable to push the folder to my repository on Github. It recieve an error message in Shell. I will return to this issue later. 
+\end{itemize} 
+
+
+
+\subsection{Final Thoughts}
+
+\textbf{11:15am}
+
+\begin{itemize}
+\item Learning how to work in Gitbash has been very helpful and I would very much like to get better in order to apply these tools in my general academic work - I will need a lot more practice though. 
+\item I do have to find a alternative to Gitbash as it is to dissimilar to the windows shell that our lectures are using - It makes it very difficult to follow instructions in class. 
+\item Overleaf: Just now working in Overleaf has been a better experience than when making my previous entries. I would still love to learn how to properly format and become comfortable with utilizing its features. 
+\item Github: I am  still not able to upload and create repositories, I definitely don’t think I have a full grasp of its features or process. I will have to return to this task later on. 
+\end{itemize}
+
+\section{25/11/2019}
+
+R for social scientists
+
+
+\subsection{Thoughts/Intentions}
+
+\begin{itemize}
+\item \textbf {07.30am} I have Downloaded R and RStudios and we have been introduced to its basic functions in class; how to import CSV files, the structure of data frames, how to add/remove rows and columns and how to calculate summary statistics from a data frame. Now I have apply my newly learned skills to my own data-sheet for my final project.
+ 
+\textbf{08.15am} Rather than working with the provided test data sheet (Safi.clean) I will now go through the relevant exercises working with my own data, which transcribed admission protocols from the psychiatric hospital in Risskov from 1902. 
+\end{itemize}
+
+
+\subsection{Action}
+\begin{itemize}
+\item I am creating a new project and setting up a new working directory, I realized that I initially set it up wrong in class which has been causing me a lot of problems with my paths. 
+\item Downloading my data from Google Sheets to a .csv-file
+\item I can not seem to import my .csv file into R - I recieve and error-message. 
+\item Tried downloading the data-set from Google Sheets still as an .csv-file, but when choosing which program to open the file with, I chose 'Rstudios' instead of 'Excel'. 
+\item This works and I begin doing some basic summarizing commands to test on the data-set. 
+\item I'm selecting columns and filtering rows and pulling out different informations ex. how many patients had a specific diagnosis.
+\item When is imported the .csv I used the following code: \begin{lstlisting}
+$protokol4 <- read csv_("data/protokol4.csv", NA = "NULL")$\end{lstlisting}. In my data-set I have two columns in dates, but R is registering them both as characters. I think it's because when I created the data-set I wrote 'NA' in empty cells. It seems as if R does not register the 'NA' as missing values, but as word and thus reads the entire column into characters
+\item I use in search-and-replace function in Google Sheets to replace all the 'NA's into 'Na' - I use the boundrary regular expression to only find 'NA' when  isolated, and not within a word. 
+\item R now registers about half the Na's as missiong values - now I try to simply force it to register the dates as date: \begin{lstlisting}$Afgået_dato <- as.Date(protokol4 Afgået_dato)$/\end{lstlisting}
+\item R introduced NA by coercion all the empty cells are now  read correctly as missing values - I (think) have achieved what I wanted, but in a very wrong way. 
+\item I googled my problem turns out others have had similar issue
+\item I then imported new data-set where I, working in OpenRefine, assigned all the missing cells '-99' (as per suggestion on \href{https://stackoverflow.com/questions/49120151/r-not-detecting-missing-values}{Stackoverflow})
+\item I then replaced all the '-99' with NA - now it reads the empty cells as missing values - finally!
+\end{itemize}
+
+
+
+\subsection{Results}
+\begin{itemize}
+    \item I have been able to answer most of my research question using R today 
+    \item Happy to have solved my missing values problem on my own. 
+\end{itemize}
+
+ 
+\subsection{Final Thoughts}
+\begin{itemize}
+    \item In general: working in R today has been an overall success and I feel more confident using the software. I have been able to extract the information from my data-set to answer my research question in order to write my paper. 
+    \item Dates: I am still struggling with calculating the time interval in months and years between the admission date and the release date - I think It's because I have not converted the dates correctly. I will talk with my peers and return to this issue later.
+\item I will continue and begin the GGplots and graphics based on my summaries tomorrow.
+\end{itemize}
+
+\section{29/11/2019}
+Creating a repository and pushing files to Github - attempt nr. 2
+\subsection{Thoughts and intentions}
+    \textbf{02:00pm} I am now working on my project and finishing up this Learning Journal. I will try again to create a repository to Github and upload the Learning Journal. 
+
+\subsection{Action}
+\begin{itemize}
+\item I start completely over and meticulously follow the instructions provided in class. 
+\Item I am able to set up version control but I recieve an error message in gitbash when I try to push my file to a remote repository on Github. 
+\item somebody had the same problem and I follow the advice on \href{https://stackoverflow.com/questions/36880121/fatal-i-dont-handle-protocol-while-pushing-to-upstream}{Stackoverflow}
+\item But to no avail, same error message is displayed - I will have to seek out help IRL. 
+\end{itemize}
+
+Pushing my journal to a repository in Github
+\begin{itemize}
+\item Click on profile icon in top right corner and click ‘your repositories’
+\item Click ‘new’ and entering details - named repository ‘learning-journal’
+\item Selected initialize this repository with a README and created repository
+\item Uploading overleaf weekly template sample
+\item Commited file with description
+\end{itemize}
+ 
+
+
+\subsection{Results}
+\begin{itemize}
+    \item Have still not manged to push my directory to an repository on Github. It's very frustrating as it seems like a fairly straight-forward task, but I am unable to work out where my error occurs. I will need to seek out assistance from someone more experienced than me. 
+    \item I have now finished my learning-journal in Overleaf, and I have almost finished processing my data in R. Looking back over my journal I am satisfied to see the progress I have made. 
+\end{itemize}
+
+\end{document} 
